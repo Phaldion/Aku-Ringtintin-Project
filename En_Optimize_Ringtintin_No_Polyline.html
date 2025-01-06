@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09ddfa9f73804796f71f56b0b0298b2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09ddfa9f73804796f71f56b0b0298b2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09ddfa9f73804796f71f56b0b0298b2c = L.map(
+                "map_09ddfa9f73804796f71f56b0b0298b2c",
+                {
+                    center: [38.817473003788635, 30.534564935840955],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15.28,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2341a4c134d27f9ce06d5ac24c54f9a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c2341a4c134d27f9ce06d5ac24c54f9a.addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var marker_d41fe0577b3113da4546ff8ffc978e0e = L.marker(
+                [38.81314535722232, 30.536205125683427],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_b23d412fdb4bc5cf8b83907290810cfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_d41fe0577b3113da4546ff8ffc978e0e.setIcon(icon_b23d412fdb4bc5cf8b83907290810cfa);
+        
+    
+        var popup_5a13c8318c39c14db363ea9f1ba2abba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02371fe8f05b51fae7992ee04eb8736e = $(`<div id="html_02371fe8f05b51fae7992ee04eb8736e" style="width: 100.0%; height: 100.0%;">Rektörlük Durağı</div>`)[0];
+                popup_5a13c8318c39c14db363ea9f1ba2abba.setContent(html_02371fe8f05b51fae7992ee04eb8736e);
+            
+        
+
+        marker_d41fe0577b3113da4546ff8ffc978e0e.bindPopup(popup_5a13c8318c39c14db363ea9f1ba2abba)
+        ;
+
+        
+    
+    
+            var marker_2effd9064421b45254f14d9f3e513c0d = L.marker(
+                [38.81478333783357, 30.535045468245222],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_2aea037272ee0c088c39635143d45288 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2effd9064421b45254f14d9f3e513c0d.setIcon(icon_2aea037272ee0c088c39635143d45288);
+        
+    
+        var popup_69f3d41874111312261b3857c48eda70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3b1dfbb0f0aa72012434de2d6242009 = $(`<div id="html_f3b1dfbb0f0aa72012434de2d6242009" style="width: 100.0%; height: 100.0%;">Ara Durak</div>`)[0];
+                popup_69f3d41874111312261b3857c48eda70.setContent(html_f3b1dfbb0f0aa72012434de2d6242009);
+            
+        
+
+        marker_2effd9064421b45254f14d9f3e513c0d.bindPopup(popup_69f3d41874111312261b3857c48eda70)
+        ;
+
+        
+    
+    
+            var marker_80ff72dc417947494cf2851825ffad95 = L.marker(
+                [38.81698722768425, 30.53448538319871],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_d172d0b31806d06225307d2102621c8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cog", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_80ff72dc417947494cf2851825ffad95.setIcon(icon_d172d0b31806d06225307d2102621c8e);
+        
+    
+        var popup_754d3b2b2f0f9ae1df5da0ab3eb5a030 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95cd95074fe52e4ad8734eab6440f441 = $(`<div id="html_95cd95074fe52e4ad8734eab6440f441" style="width: 100.0%; height: 100.0%;">Mühendislik Fakültesi Durağı</div>`)[0];
+                popup_754d3b2b2f0f9ae1df5da0ab3eb5a030.setContent(html_95cd95074fe52e4ad8734eab6440f441);
+            
+        
+
+        marker_80ff72dc417947494cf2851825ffad95.bindPopup(popup_754d3b2b2f0f9ae1df5da0ab3eb5a030)
+        ;
+
+        
+    
+    
+            var marker_0a0756fcf8ec8151a7798e1f6cb111c9 = L.marker(
+                [38.82049725096702, 30.534160317990985],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_3a98ce9bbfc67f07c7dd56d5bba0e7f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cat", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_0a0756fcf8ec8151a7798e1f6cb111c9.setIcon(icon_3a98ce9bbfc67f07c7dd56d5bba0e7f7);
+        
+    
+        var popup_bbc3f8eea45871644b91518e765176ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebf653fb956ebefcfb9be50925602b98 = $(`<div id="html_ebf653fb956ebefcfb9be50925602b98" style="width: 100.0%; height: 100.0%;">Veterinerlik Fakültesi</div>`)[0];
+                popup_bbc3f8eea45871644b91518e765176ff.setContent(html_ebf653fb956ebefcfb9be50925602b98);
+            
+        
+
+        marker_0a0756fcf8ec8151a7798e1f6cb111c9.bindPopup(popup_bbc3f8eea45871644b91518e765176ff)
+        ;
+
+        
+    
+    
+            var marker_dbb07b49471025367903716221ed63ba = L.marker(
+                [38.822496556668646, 30.533322834168054],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_105dd92dc62782d3d023f6fa1c319cba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mosque", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_dbb07b49471025367903716221ed63ba.setIcon(icon_105dd92dc62782d3d023f6fa1c319cba);
+        
+    
+        var popup_f0d47aa51a7049f2a507dd98ad063b28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fce74367ec15f0df87f261fb95b3632c = $(`<div id="html_fce74367ec15f0df87f261fb95b3632c" style="width: 100.0%; height: 100.0%;">İlahiyat Fakültesi Durağı</div>`)[0];
+                popup_f0d47aa51a7049f2a507dd98ad063b28.setContent(html_fce74367ec15f0df87f261fb95b3632c);
+            
+        
+
+        marker_dbb07b49471025367903716221ed63ba.bindPopup(popup_f0d47aa51a7049f2a507dd98ad063b28)
+        ;
+
+        
+    
+    
+            var marker_aeb6ef6287864b83df172355ec95f8ab = L.marker(
+                [38.82411559401791, 30.532936279785584],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_b329b042945eb067b81e423d72269232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_aeb6ef6287864b83df172355ec95f8ab.setIcon(icon_b329b042945eb067b81e423d72269232);
+        
+    
+        var popup_390364ab1dcbde687f39bd5ecba2840d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4692c3daf6e6f0554faad9e2fed70bf7 = $(`<div id="html_4692c3daf6e6f0554faad9e2fed70bf7" style="width: 100.0%; height: 100.0%;">Konservatuvar Durağı</div>`)[0];
+                popup_390364ab1dcbde687f39bd5ecba2840d.setContent(html_4692c3daf6e6f0554faad9e2fed70bf7);
+            
+        
+
+        marker_aeb6ef6287864b83df172355ec95f8ab.bindPopup(popup_390364ab1dcbde687f39bd5ecba2840d)
+        ;
+
+        
+    
+    
+            var marker_075bd730852094dc579fe5e10bf2f446 = L.marker(
+                [38.827872788898354, 30.531864182114496],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_2892037a48f981fad06bf33ee391508c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "balance-scale", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_075bd730852094dc579fe5e10bf2f446.setIcon(icon_2892037a48f981fad06bf33ee391508c);
+        
+    
+        var popup_7ec2153787d0c6b9eed9c637829a34b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30960382a241d78a78d8cf1b640ff5da = $(`<div id="html_30960382a241d78a78d8cf1b640ff5da" style="width: 100.0%; height: 100.0%;">Hukuk Fakültesi Durağı</div>`)[0];
+                popup_7ec2153787d0c6b9eed9c637829a34b0.setContent(html_30960382a241d78a78d8cf1b640ff5da);
+            
+        
+
+        marker_075bd730852094dc579fe5e10bf2f446.bindPopup(popup_7ec2153787d0c6b9eed9c637829a34b0)
+        ;
+
+        
+    
+    
+            var marker_0f4dce501b4bb216e6479c69f1382d5e = L.marker(
+                [38.82415964346543, 30.5327195953422],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_fc1ab9dc4b2a133306bb9b0f36b81f5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paint-brush", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_0f4dce501b4bb216e6479c69f1382d5e.setIcon(icon_fc1ab9dc4b2a133306bb9b0f36b81f5c);
+        
+    
+        var popup_28cad9c31318eaf39ff480bd98d50c45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_363aa86c660eb23bffecd528804fe169 = $(`<div id="html_363aa86c660eb23bffecd528804fe169" style="width: 100.0%; height: 100.0%;">Güzel Sanatlar Durağı</div>`)[0];
+                popup_28cad9c31318eaf39ff480bd98d50c45.setContent(html_363aa86c660eb23bffecd528804fe169);
+            
+        
+
+        marker_0f4dce501b4bb216e6479c69f1382d5e.bindPopup(popup_28cad9c31318eaf39ff480bd98d50c45)
+        ;
+
+        
+    
+    
+            var marker_415bcae127618ccdcc93ca24a82cdbf4 = L.marker(
+                [38.82262095917927, 30.53306861505181],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_2035e00fe2f4a38215912f8000987bb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_415bcae127618ccdcc93ca24a82cdbf4.setIcon(icon_2035e00fe2f4a38215912f8000987bb0);
+        
+    
+        var popup_6cf2d40b4dab50c4eec621c557d35577 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b127e1d9152f6bc7b6da5a33274954 = $(`<div id="html_57b127e1d9152f6bc7b6da5a33274954" style="width: 100.0%; height: 100.0%;">Ara Durak</div>`)[0];
+                popup_6cf2d40b4dab50c4eec621c557d35577.setContent(html_57b127e1d9152f6bc7b6da5a33274954);
+            
+        
+
+        marker_415bcae127618ccdcc93ca24a82cdbf4.bindPopup(popup_6cf2d40b4dab50c4eec621c557d35577)
+        ;
+
+        
+    
+    
+            var marker_f926d68d927c439381f026f05a1a6e8e = L.marker(
+                [38.82082456841975, 30.533780406076215],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_ab5b94d4830063521a1e9c9660c1002d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cat", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_f926d68d927c439381f026f05a1a6e8e.setIcon(icon_ab5b94d4830063521a1e9c9660c1002d);
+        
+    
+        var popup_05a0c1627d9ab68012e7f67e22451957 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6ab85860e496445acbe10198a766389 = $(`<div id="html_c6ab85860e496445acbe10198a766389" style="width: 100.0%; height: 100.0%;">Veterinerlik Fakültesi Durağı</div>`)[0];
+                popup_05a0c1627d9ab68012e7f67e22451957.setContent(html_c6ab85860e496445acbe10198a766389);
+            
+        
+
+        marker_f926d68d927c439381f026f05a1a6e8e.bindPopup(popup_05a0c1627d9ab68012e7f67e22451957)
+        ;
+
+        
+    
+    
+            var marker_047fe3c99b5b8d26b58fd7da615b66bb = L.marker(
+                [38.817706258405124, 30.53423578154881],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_f97626e4a91e6ab592fd82582f2d3b6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cog", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_047fe3c99b5b8d26b58fd7da615b66bb.setIcon(icon_f97626e4a91e6ab592fd82582f2d3b6e);
+        
+    
+        var popup_c839f369482c36b75d7ac5c1240a351d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ed88152c554629cd0a5706ed36bdaf8 = $(`<div id="html_3ed88152c554629cd0a5706ed36bdaf8" style="width: 100.0%; height: 100.0%;">Mühendislik Fakültesi Durağı</div>`)[0];
+                popup_c839f369482c36b75d7ac5c1240a351d.setContent(html_3ed88152c554629cd0a5706ed36bdaf8);
+            
+        
+
+        marker_047fe3c99b5b8d26b58fd7da615b66bb.bindPopup(popup_c839f369482c36b75d7ac5c1240a351d)
+        ;
+
+        
+    
+    
+            var marker_c38ca115b00e7b3031d023a027963e05 = L.marker(
+                [38.81480574403074, 30.534804873383017],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_3f5c6c484b42e54c6cf128f630b2393d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c38ca115b00e7b3031d023a027963e05.setIcon(icon_3f5c6c484b42e54c6cf128f630b2393d);
+        
+    
+        var popup_ec86b88857911b4f6c167ffcf735e039 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b283d75db4120e38b09b8d9eb497f4e = $(`<div id="html_0b283d75db4120e38b09b8d9eb497f4e" style="width: 100.0%; height: 100.0%;">Ara Durak</div>`)[0];
+                popup_ec86b88857911b4f6c167ffcf735e039.setContent(html_0b283d75db4120e38b09b8d9eb497f4e);
+            
+        
+
+        marker_c38ca115b00e7b3031d023a027963e05.bindPopup(popup_ec86b88857911b4f6c167ffcf735e039)
+        ;
+
+        
+    
+    
+            var marker_e1d0e574955637071df3d2a7b6d8c922 = L.marker(
+                [38.812584921949664, 30.536022015009255],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_201a4854cf33c3dc574462e83a2e3e8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e1d0e574955637071df3d2a7b6d8c922.setIcon(icon_201a4854cf33c3dc574462e83a2e3e8f);
+        
+    
+        var popup_10453eb3e9a4c1d20e4c302aebbf1a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0487b386c5677eff7e362d3831af045 = $(`<div id="html_a0487b386c5677eff7e362d3831af045" style="width: 100.0%; height: 100.0%;">Rektörlük Durağı</div>`)[0];
+                popup_10453eb3e9a4c1d20e4c302aebbf1a62.setContent(html_a0487b386c5677eff7e362d3831af045);
+            
+        
+
+        marker_e1d0e574955637071df3d2a7b6d8c922.bindPopup(popup_10453eb3e9a4c1d20e4c302aebbf1a62)
+        ;
+
+        
+    
+    
+            var marker_2c7e906cf744a2e592827eae3691b200 = L.marker(
+                [38.80939832404729, 30.535948456536772],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_0b5d4e25b118e130f2c7728e3c451f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2c7e906cf744a2e592827eae3691b200.setIcon(icon_0b5d4e25b118e130f2c7728e3c451f32);
+        
+    
+        var popup_4da96bfd5639c3b0172484c843e9cd62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_241282f32eebe7e180368771935c9bdd = $(`<div id="html_241282f32eebe7e180368771935c9bdd" style="width: 100.0%; height: 100.0%;">Fen Edebiyat Fakültesi Durağı</div>`)[0];
+                popup_4da96bfd5639c3b0172484c843e9cd62.setContent(html_241282f32eebe7e180368771935c9bdd);
+            
+        
+
+        marker_2c7e906cf744a2e592827eae3691b200.bindPopup(popup_4da96bfd5639c3b0172484c843e9cd62)
+        ;
+
+        
+    
+    
+            var marker_4873f3b48b9ee25e82091614ef7e9a10 = L.marker(
+                [38.80942211969003, 30.536124128056855],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_5bd3b8e582dd7a2016ba307f9b513e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_4873f3b48b9ee25e82091614ef7e9a10.setIcon(icon_5bd3b8e582dd7a2016ba307f9b513e90);
+        
+    
+        var popup_9a5a78ba7f0c68bfaea32abc270fea15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e45cbd1e31903dac697a592840667d8d = $(`<div id="html_e45cbd1e31903dac697a592840667d8d" style="width: 100.0%; height: 100.0%;">Fen Edebiyat Fakültesi Durağı</div>`)[0];
+                popup_9a5a78ba7f0c68bfaea32abc270fea15.setContent(html_e45cbd1e31903dac697a592840667d8d);
+            
+        
+
+        marker_4873f3b48b9ee25e82091614ef7e9a10.bindPopup(popup_9a5a78ba7f0c68bfaea32abc270fea15)
+        ;
+
+        
+    
+    
+            var marker_76212b02f5243ed324e8e90ec9e161f6 = L.marker(
+                [38.806276460227444, 30.53325842968936],
+                {}
+            ).addTo(map_09ddfa9f73804796f71f56b0b0298b2c);
+        
+    
+            var icon_508c1d16cd128b9569c46d4b6a4f8f88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_76212b02f5243ed324e8e90ec9e161f6.setIcon(icon_508c1d16cd128b9569c46d4b6a4f8f88);
+        
+    
+        var popup_b59cd640b6f6abf194c69f9d1a7da341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c96cc3be8b20d9bd523f32a4489e77 = $(`<div id="html_c8c96cc3be8b20d9bd523f32a4489e77" style="width: 100.0%; height: 100.0%;">Üni Yurt</div>`)[0];
+                popup_b59cd640b6f6abf194c69f9d1a7da341.setContent(html_c8c96cc3be8b20d9bd523f32a4489e77);
+            
+        
+
+        marker_76212b02f5243ed324e8e90ec9e161f6.bindPopup(popup_b59cd640b6f6abf194c69f9d1a7da341)
+        ;
+
+        
+    
+</script>
+</html>
